@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<GroupProduct2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AryOfProduct2>
+    <Product2>
+      <ID>10</ID>
+      <Name>p2_1的名稱</Name>
+    </Product2>
+    <Product2>
+      <ID>11</ID>
+      <Name>p2_2的名稱</Name>
+    </Product2>
+  </AryOfProduct2>
+</GroupProduct2>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<AttriGroupProduct2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <產品二的串列>
+    <串列的成員>
+      <ID>10</ID>
+      <Name>p2_1的名稱</Name>
+    </串列的成員>
+    <串列的成員>
+      <ID>11</ID>
+      <Name>p2_2的名稱</Name>
+    </串列的成員>
+  </產品二的串列>
+</AttriGroupProduct2>

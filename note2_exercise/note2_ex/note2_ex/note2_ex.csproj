@@ -1,0 +1,337 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB878E8D-497A-43C9-A4EA-1E059A109590}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>note2_ex</RootNamespace>
+    <AssemblyName>note2_ex</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44309</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax_change_outside_panel.aspx" />
+    <Content Include="ajax_dynamic_js_string.aspx" />
+    <Content Include="ajax_globalization.aspx" />
+    <Content Include="ajax_JS_Composite.aspx" />
+    <Content Include="ajax_localization.aspx" />
+    <Content Include="ajax_prevent_repeat_click.aspx" />
+    <EmbeddedResource Include="ajax_resource_mode.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="ajax_traceDump_textArea.aspx" />
+    <Content Include="application_with_global.aspx" />
+    <Content Include="composite_part2.js" />
+    <Content Include="composite_part1.js" />
+    <Content Include="cookie.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Localize_control.aspx" />
+    <Content Include="muti_langGlobla1.aspx" />
+    <Content Include="muti_lang.aspx" />
+    <Content Include="muti_langGlobal2.aspx" />
+    <Content Include="muti_langGlobla3.aspx" />
+    <Content Include="muti_langLocal.aspx" />
+    <Content Include="muti_langLocal_Globla.aspx" />
+    <Content Include="Session_buybucket.aspx" />
+    <Content Include="Session_Payment.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajax_change_outside_panel.aspx.cs">
+      <DependentUpon>ajax_change_outside_panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax_change_outside_panel.aspx.designer.cs">
+      <DependentUpon>ajax_change_outside_panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax_dynamic_js_string.aspx.cs">
+      <DependentUpon>ajax_dynamic_js_string.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax_dynamic_js_string.aspx.designer.cs">
+      <DependentUpon>ajax_dynamic_js_string.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax_globalization.aspx.cs">
+      <DependentUpon>ajax_globalization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax_globalization.aspx.designer.cs">
+      <DependentUpon>ajax_globalization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax_JS_Composite.aspx.cs">
+      <DependentUpon>ajax_JS_Composite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax_JS_Composite.aspx.designer.cs">
+      <DependentUpon>ajax_JS_Composite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax_localization.aspx.cs">
+      <DependentUpon>ajax_localization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax_localization.aspx.designer.cs">
+      <DependentUpon>ajax_localization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax_prevent_repeat_click.aspx.cs">
+      <DependentUpon>ajax_prevent_repeat_click.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax_prevent_repeat_click.aspx.designer.cs">
+      <DependentUpon>ajax_prevent_repeat_click.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax_resource_mode.aspx.cs">
+      <DependentUpon>ajax_resource_mode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ajax_resource_mode.aspx.designer.cs">
+      <DependentUpon>ajax_resource_mode.aspx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ajax_traceDump_textArea.aspx.cs">
+      <DependentUpon>ajax_traceDump_textArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax_traceDump_textArea.aspx.designer.cs">
+      <DependentUpon>ajax_traceDump_textArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="application_with_global.aspx.cs">
+      <DependentUpon>application_with_global.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="application_with_global.aspx.designer.cs">
+      <DependentUpon>application_with_global.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\LanguageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\LanguageResource.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageResource.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\LanguageResource.zh-TW.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageResource.zh-TW.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\muti_langLocal.aspx.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>muti_langLocal.aspx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="cookie.aspx.cs">
+      <DependentUpon>cookie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cookie.aspx.designer.cs">
+      <DependentUpon>cookie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Localize_control.aspx.cs">
+      <DependentUpon>Localize_control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Localize_control.aspx.designer.cs">
+      <DependentUpon>Localize_control.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muti_langGlobla1.aspx.cs">
+      <DependentUpon>muti_langGlobla1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muti_langGlobla1.aspx.designer.cs">
+      <DependentUpon>muti_langGlobla1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muti_lang.aspx.cs">
+      <DependentUpon>muti_lang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muti_lang.aspx.designer.cs">
+      <DependentUpon>muti_lang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muti_langGlobal2.aspx.cs">
+      <DependentUpon>muti_langGlobal2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muti_langGlobal2.aspx.designer.cs">
+      <DependentUpon>muti_langGlobal2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muti_langGlobla3.aspx.cs">
+      <DependentUpon>muti_langGlobla3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muti_langGlobla3.aspx.designer.cs">
+      <DependentUpon>muti_langGlobla3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muti_langLocal_Globla.aspx.cs">
+      <DependentUpon>muti_langLocal_Globla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muti_langLocal_Globla.aspx.designer.cs">
+      <DependentUpon>muti_langLocal_Globla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="muti_langLocal.aspx.cs">
+      <DependentUpon>muti_langLocal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muti_langLocal.aspx.designer.cs">
+      <DependentUpon>muti_langLocal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session_buybucket.aspx.cs">
+      <DependentUpon>Session_buybucket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session_buybucket.aspx.designer.cs">
+      <DependentUpon>Session_buybucket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session_Payment.aspx.cs">
+      <DependentUpon>Session_Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session_Payment.aspx.designer.cs">
+      <DependentUpon>Session_Payment.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libman.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\LanguageResource.zh-TW.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>LanguageResource.zh-TW.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\LanguageResource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>LanguageResource.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\LanguageResource.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>LanguageResource.en-US.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\muti_langLocal.aspx.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>muti_langLocal.aspx.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\muti_langLocal.aspx.zh-TW.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\muti_langLocal_Globla.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\muti_langLocal_Globla.aspx.zh-TW.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Localize_control.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyAjaxClassLibrary1\MyAjaxClassLibrary1.csproj">
+      <Project>{d4478afd-c75c-48a8-960d-6aa761580e01}</Project>
+      <Name>MyAjaxClassLibrary1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62418</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44309/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

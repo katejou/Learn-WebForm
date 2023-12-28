@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EX6_3.master.cs" Inherits="ASP.NET_EX6._3_.EX6_3" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            我是 Master Page<br />
+            測 Content Page 去改變 Master Page 的&lt;第二種方法&gt;︰&nbsp; 
+            <br />
+            <br />
+&nbsp;Master Page 開放一個屬性，去控制一個元件，屬性再由 Content Page 去操作。<br />
+            <br />
+            被屬性控制的元件 Label 1 :<br />
+            <br />
+            <asp:Label ID="Label1" runat="server" Text="我是Master Page Label 1 未被改變前的內容"></asp:Label>
+            <br />
+            <hr>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+            <hr>
+        </div>
+    </form>
+</body>
+</html>

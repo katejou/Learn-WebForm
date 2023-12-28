@@ -1,0 +1,5 @@
+https://www.itread01.com/content/1557822058.html
+
+https://docs.microsoft.com/zh-tw/dotnet/api/system.security.accesscontrol.filesystemaccessrule?view=dotnet-plat-ext-3.1
+
+https://dotblogs.com.tw/mis2000lab/2011/09/19/session_login_user_right_20110919

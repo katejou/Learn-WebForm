@@ -1,0 +1,27 @@
+﻿body
+{
+	font-family: Arial; font-size: 12px; color: #000000
+}
+a:active
+{
+	font-family: Arial; color: #9685ba; text-decoration: none;
+}
+a:link
+{
+	font-family: Arial; color: #6b6d72; text-decoration: none;
+}
+a:visited
+{
+	font-family: Arial; color: #6b6d72; text-decoration: none;
+}
+a:hover
+{
+	font-family: Arial; color: #9685ba; text-decoration: none;
+}
+.bluebutton
+{	
+	border-style:solid;
+	border-width: 1px;
+	border-color:#eeeeff;
+	font-family: Arial; font-size: 12px;
+}

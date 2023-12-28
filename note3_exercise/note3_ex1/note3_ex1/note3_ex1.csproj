@@ -1,0 +1,552 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DA7C153-46A7-4B4C-A6E9-6647E8C1FE18}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>note3_ex1</RootNamespace>
+    <AssemblyName>note3_ex1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44374</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="sysglobl" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Collection\NameValueCollection_ex.aspx" />
+    <Content Include="Collection\self_def_obj_imple_icomprable.aspx" />
+    <Content Include="Collection\type_safe_selfDefObj_inherit_collection.aspx" />
+    <Content Include="Collection\HybridDictionary.aspx" />
+    <Content Include="Collection\Queue.aspx" />
+    <Content Include="ConfigAlter\alterConfig_Save.aspx" />
+    <Content Include="ConfigAlter\Encryp_Decryp_config.aspx" />
+    <Content Include="ConfigAlter\Show_ConfigValue.aspx" />
+    <Content Include="Drawing\Brush_Rectangle_ex.aspx" />
+    <Content Include="Drawing\Line_chart.aspx" />
+    <Content Include="Drawing\Line_Lines_ex.aspx" />
+    <Content Include="Drawing\Load_GIF.aspx" />
+    <Content Include="Drawing\Load_smaller_gif.aspx" />
+    <Content Include="Drawing\PictureBox_ex.aspx" />
+    <Content Include="Drawing\Pie_chart_Brush_Font.aspx" />
+    <Content Include="Drawing\Cal_Width_Height.aspx" />
+    <Content Include="Drawing\Pie_with_layer.aspx" />
+    <Content Include="Drawing\Q.gif" />
+    <Content Include="Drawing\Q.jpg" />
+    <Content Include="Drawing\Rectangle_ex.aspx" />
+    <Content Include="Drawing\Rect_2_like_temperture.aspx" />
+    <Content Include="Drawing\Show_pic_by_gen_Img_with_parameter.aspx" />
+    <Content Include="Drawing\Show_pic_on_lmg_ctrl.aspx" />
+    <Content Include="Drawing\Text_Area.aspx" />
+    <Content Include="FileManage\BufferStream_ex.aspx" />
+    <Content Include="FileManage\DeflateStream_ex.aspx" />
+    <Content Include="FileManage\DriveInfo_ex.aspx" />
+    <Content Include="FileManage\FileSystemWatcher_ex.aspx" />
+    <Content Include="FileManage\File_ex.aspx" />
+    <Content Include="FileManage\IsolatedStorageFile_ex.aspx" />
+    <Content Include="FileManage\Read_Write_File.aspx" />
+    <Content Include="Globalization\CompareInfo_ex.aspx" />
+    <Content Include="Globalization\CultureInfo_ex.aspx" />
+    <Content Include="Globalization\CurrentCulture_ex.aspx" />
+    <Content Include="Globalization\Def_culture_ex.aspx" />
+    <Content Include="Globalization\GetAllCulture_ex.aspx" />
+    <Content Include="HandleString\Encoding_ex.aspx" />
+    <Content Include="HandleString\GetEncodingMethod_Fail.aspx" />
+    <Content Include="HandleString\GetEncodingMethod_Work_ex.aspx" />
+    <Content Include="HandleString\Regex_Group_ex.aspx" />
+    <Content Include="HandleString\Regex_Group_HtmlEx_ex.aspx" />
+    <Content Include="HandleString\StringBulider_ex.aspx" />
+    <Content Include="HandleString\test.txt" />
+    <Content Include="HandleString\testOK_BIG5.txt" />
+    <Content Include="HandleString\testOK_UTF8.txt" />
+    <Content Include="JS\ctrls.js" />
+    <Content Include="JS\jquery.js" />
+    <Content Include="ProcessControl\Debug_ex.aspx" />
+    <Content Include="ProcessControl\EventLog2.aspx" />
+    <Content Include="ProcessControl\GetAllProcessAndItsModules.aspx" />
+    <Content Include="ProcessControl\PerformanceCounter_ex.aspx" />
+    <Content Include="ProcessControl\ProcessStartInfo_ex.aspx" />
+    <Content Include="ProcessControl\ToOpen.txt" />
+    <Content Include="ProcessControl\WMI_ex.aspx" />
+    <Content Include="Serialize\Attribute_XML_serial_ex.aspx" />
+    <Content Include="Serialize\Attri_inherit_xml_serial_ex.aspx" />
+    <Content Include="Serialize\Binary_serial_ex.aspx" />
+    <Content Include="Serialize\Hide_info_serial_ex.aspx" />
+    <Content Include="Serialize\ISerialization_XML_serial_ex.aspx" />
+    <Content Include="Serialize\XML_serial_ex.aspx" />
+    <Content Include="Serialize\SOAP_serial_ex.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collection\NameValueCollection_ex.aspx.cs">
+      <DependentUpon>NameValueCollection_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collection\NameValueCollection_ex.aspx.designer.cs">
+      <DependentUpon>NameValueCollection_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collection\self_def_obj_imple_icomprable.aspx.cs">
+      <DependentUpon>self_def_obj_imple_icomprable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collection\self_def_obj_imple_icomprable.aspx.designer.cs">
+      <DependentUpon>self_def_obj_imple_icomprable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collection\type_safe_selfDefObj_inherit_collection.aspx.cs">
+      <DependentUpon>type_safe_selfDefObj_inherit_collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collection\type_safe_selfDefObj_inherit_collection.aspx.designer.cs">
+      <DependentUpon>type_safe_selfDefObj_inherit_collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collection\HybridDictionary.aspx.cs">
+      <DependentUpon>HybridDictionary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collection\HybridDictionary.aspx.designer.cs">
+      <DependentUpon>HybridDictionary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAlter\alterConfig_Save.aspx.cs">
+      <DependentUpon>alterConfig_Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigAlter\alterConfig_Save.aspx.designer.cs">
+      <DependentUpon>alterConfig_Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAlter\Encryp_Decryp_config.aspx.cs">
+      <DependentUpon>Encryp_Decryp_config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigAlter\Encryp_Decryp_config.aspx.designer.cs">
+      <DependentUpon>Encryp_Decryp_config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAlter\Show_ConfigValue.aspx.cs">
+      <DependentUpon>Show_ConfigValue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigAlter\Show_ConfigValue.aspx.designer.cs">
+      <DependentUpon>Show_ConfigValue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Brush_Rectangle_ex.aspx.cs">
+      <DependentUpon>Brush_Rectangle_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Brush_Rectangle_ex.aspx.designer.cs">
+      <DependentUpon>Brush_Rectangle_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\flag_pic.ashx.cs">
+      <DependentUpon>flag_pic.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\flag_pic_gt_para.ashx.cs">
+      <DependentUpon>flag_pic_gt_para.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Line_chart.aspx.cs">
+      <DependentUpon>Line_chart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Line_chart.aspx.designer.cs">
+      <DependentUpon>Line_chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Line_Lines_ex.aspx.cs">
+      <DependentUpon>Line_Lines_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Line_Lines_ex.aspx.designer.cs">
+      <DependentUpon>Line_Lines_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Load_GIF.aspx.cs">
+      <DependentUpon>Load_GIF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Load_GIF.aspx.designer.cs">
+      <DependentUpon>Load_GIF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Load_smaller_gif.aspx.cs">
+      <DependentUpon>Load_smaller_gif.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Load_smaller_gif.aspx.designer.cs">
+      <DependentUpon>Load_smaller_gif.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\PictureBox_ex.aspx.cs">
+      <DependentUpon>PictureBox_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\PictureBox_ex.aspx.designer.cs">
+      <DependentUpon>PictureBox_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Pie_chart_Brush_Font.aspx.cs">
+      <DependentUpon>Pie_chart_Brush_Font.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Pie_chart_Brush_Font.aspx.designer.cs">
+      <DependentUpon>Pie_chart_Brush_Font.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Cal_Width_Height.aspx.cs">
+      <DependentUpon>Cal_Width_Height.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Cal_Width_Height.aspx.designer.cs">
+      <DependentUpon>Cal_Width_Height.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Pie_with_layer.aspx.cs">
+      <DependentUpon>Pie_with_layer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Pie_with_layer.aspx.designer.cs">
+      <DependentUpon>Pie_with_layer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Rectangle_ex.aspx.cs">
+      <DependentUpon>Rectangle_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Rectangle_ex.aspx.designer.cs">
+      <DependentUpon>Rectangle_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Rect_2_like_temperture.aspx.cs">
+      <DependentUpon>Rect_2_like_temperture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Rect_2_like_temperture.aspx.designer.cs">
+      <DependentUpon>Rect_2_like_temperture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Show_pic_by_gen_Img_with_parameter.aspx.cs">
+      <DependentUpon>Show_pic_by_gen_Img_with_parameter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Show_pic_by_gen_Img_with_parameter.aspx.designer.cs">
+      <DependentUpon>Show_pic_by_gen_Img_with_parameter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Show_pic_on_lmg_ctrl.aspx.cs">
+      <DependentUpon>Show_pic_on_lmg_ctrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Show_pic_on_lmg_ctrl.aspx.designer.cs">
+      <DependentUpon>Show_pic_on_lmg_ctrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Drawing\Text_Area.aspx.cs">
+      <DependentUpon>Text_Area.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drawing\Text_Area.aspx.designer.cs">
+      <DependentUpon>Text_Area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManage\BufferStream_ex.aspx.cs">
+      <DependentUpon>BufferStream_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManage\BufferStream_ex.aspx.designer.cs">
+      <DependentUpon>BufferStream_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManage\DeflateStream_ex.aspx.cs">
+      <DependentUpon>DeflateStream_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManage\DeflateStream_ex.aspx.designer.cs">
+      <DependentUpon>DeflateStream_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManage\DriveInfo_ex.aspx.cs">
+      <DependentUpon>DriveInfo_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManage\DriveInfo_ex.aspx.designer.cs">
+      <DependentUpon>DriveInfo_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManage\FileSystemWatcher_ex.aspx.cs">
+      <DependentUpon>FileSystemWatcher_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManage\FileSystemWatcher_ex.aspx.designer.cs">
+      <DependentUpon>FileSystemWatcher_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManage\File_ex.aspx.cs">
+      <DependentUpon>File_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManage\File_ex.aspx.designer.cs">
+      <DependentUpon>File_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManage\IsolatedStorageFile_ex.aspx.cs">
+      <DependentUpon>IsolatedStorageFile_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManage\IsolatedStorageFile_ex.aspx.designer.cs">
+      <DependentUpon>IsolatedStorageFile_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileManage\Read_Write_File.aspx.cs">
+      <DependentUpon>Read_Write_File.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileManage\Read_Write_File.aspx.designer.cs">
+      <DependentUpon>Read_Write_File.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Globalization\CompareInfo_ex.aspx.cs">
+      <DependentUpon>CompareInfo_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Globalization\CompareInfo_ex.aspx.designer.cs">
+      <DependentUpon>CompareInfo_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Globalization\CultureInfo_ex.aspx.cs">
+      <DependentUpon>CultureInfo_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Globalization\CultureInfo_ex.aspx.designer.cs">
+      <DependentUpon>CultureInfo_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Globalization\CurrentCulture_ex.aspx.cs">
+      <DependentUpon>CurrentCulture_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Globalization\CurrentCulture_ex.aspx.designer.cs">
+      <DependentUpon>CurrentCulture_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Globalization\Def_culture_ex.aspx.cs">
+      <DependentUpon>Def_culture_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Globalization\Def_culture_ex.aspx.designer.cs">
+      <DependentUpon>Def_culture_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Globalization\GetAllCulture_ex.aspx.cs">
+      <DependentUpon>GetAllCulture_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Globalization\GetAllCulture_ex.aspx.designer.cs">
+      <DependentUpon>GetAllCulture_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HandleString\Encoding_ex.aspx.cs">
+      <DependentUpon>Encoding_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HandleString\Encoding_ex.aspx.designer.cs">
+      <DependentUpon>Encoding_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HandleString\GetEncodingMethod_Fail.aspx.cs">
+      <DependentUpon>GetEncodingMethod_Fail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HandleString\GetEncodingMethod_Fail.aspx.designer.cs">
+      <DependentUpon>GetEncodingMethod_Fail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HandleString\GetEncodingMethod_Work_ex.aspx.cs">
+      <DependentUpon>GetEncodingMethod_Work_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HandleString\GetEncodingMethod_Work_ex.aspx.designer.cs">
+      <DependentUpon>GetEncodingMethod_Work_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HandleString\Regex_Group_ex.aspx.cs">
+      <DependentUpon>Regex_Group_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HandleString\Regex_Group_ex.aspx.designer.cs">
+      <DependentUpon>Regex_Group_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HandleString\Regex_Group_HtmlEx_ex.aspx.cs">
+      <DependentUpon>Regex_Group_HtmlEx_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HandleString\Regex_Group_HtmlEx_ex.aspx.designer.cs">
+      <DependentUpon>Regex_Group_HtmlEx_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HandleString\StringBulider_ex.aspx.cs">
+      <DependentUpon>StringBulider_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HandleString\StringBulider_ex.aspx.designer.cs">
+      <DependentUpon>StringBulider_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessControl\Debug_ex.aspx.cs">
+      <DependentUpon>Debug_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessControl\Debug_ex.aspx.designer.cs">
+      <DependentUpon>Debug_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessControl\EventLog2.aspx.cs">
+      <DependentUpon>EventLog2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessControl\EventLog2.aspx.designer.cs">
+      <DependentUpon>EventLog2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessControl\GetAllProcessAndItsModules.aspx.cs">
+      <DependentUpon>GetAllProcessAndItsModules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessControl\GetAllProcessAndItsModules.aspx.designer.cs">
+      <DependentUpon>GetAllProcessAndItsModules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessControl\PerformanceCounter_ex.aspx.cs">
+      <DependentUpon>PerformanceCounter_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessControl\PerformanceCounter_ex.aspx.designer.cs">
+      <DependentUpon>PerformanceCounter_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessControl\ProcessStartInfo_ex.aspx.cs">
+      <DependentUpon>ProcessStartInfo_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessControl\ProcessStartInfo_ex.aspx.designer.cs">
+      <DependentUpon>ProcessStartInfo_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessControl\WMI_ex.aspx.cs">
+      <DependentUpon>WMI_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProcessControl\WMI_ex.aspx.designer.cs">
+      <DependentUpon>WMI_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Collection\Queue.aspx.cs">
+      <DependentUpon>Queue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collection\Queue.aspx.designer.cs">
+      <DependentUpon>Queue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\Attribute_XML_serial_ex.aspx.cs">
+      <DependentUpon>Attribute_XML_serial_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Serialize\Attribute_XML_serial_ex.aspx.designer.cs">
+      <DependentUpon>Attribute_XML_serial_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\Attri_inherit_xml_serial_ex.aspx.cs">
+      <DependentUpon>Attri_inherit_xml_serial_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Serialize\Attri_inherit_xml_serial_ex.aspx.designer.cs">
+      <DependentUpon>Attri_inherit_xml_serial_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\Binary_serial_ex.aspx.cs">
+      <DependentUpon>Binary_serial_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Serialize\Binary_serial_ex.aspx.designer.cs">
+      <DependentUpon>Binary_serial_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\Hide_info_serial_ex.aspx.cs">
+      <DependentUpon>Hide_info_serial_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\Hide_info_serial_ex.aspx.designer.cs">
+      <DependentUpon>Hide_info_serial_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\ISerialization_XML_serial_ex.aspx.cs">
+      <DependentUpon>ISerialization_XML_serial_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\ISerialization_XML_serial_ex.aspx.designer.cs">
+      <DependentUpon>ISerialization_XML_serial_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\MyBook.cs" />
+    <Compile Include="Serialize\MyObject.cs" />
+    <Compile Include="Serialize\XML_serial_ex.aspx.cs">
+      <DependentUpon>XML_serial_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Serialize\XML_serial_ex.aspx.designer.cs">
+      <DependentUpon>XML_serial_ex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialize\SOAP_serial_ex.aspx.cs">
+      <DependentUpon>SOAP_serial_ex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Serialize\SOAP_serial_ex.aspx.designer.cs">
+      <DependentUpon>SOAP_serial_ex.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Drawing\flag_pic.ashx" />
+    <Content Include="Drawing\flag_pic_gt_para.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65324</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44374/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

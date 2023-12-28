@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<GroupFood xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <菜單>
+    <Food>
+      <name>食物一</name>
+      <price>80</price>
+    </Food>
+    <SeaFood Type="外星類">
+      <name>食物二</name>
+      <price>90</price>
+    </SeaFood>
+  </菜單>
+</GroupFood>

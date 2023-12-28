@@ -1,0 +1,987 @@
+.style1 {
+
+	 background-color: #014732;
+
+}
+
+
+
+.style2 {
+
+	text-align: center;
+
+	background-color: #E9F3ED;
+
+}
+
+
+
+.style3 { 
+
+	color: #000000;
+
+	text-align: center;
+
+	font-size: 12pt;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #FD9935
+
+}
+
+
+
+.style4 {  
+
+	color: #C46302;
+
+	font-weight: bold; 
+
+	font-size: 10pt;
+
+	background-color: #E9F3ED;
+
+}
+
+
+
+.style5 { 
+
+	height: 25px;
+
+	color: #000000;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #FECA96;
+
+}
+
+
+
+.style6 {
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #D9D9D9;
+
+}
+
+
+
+.style7 {
+
+	font-size: 10pt;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #EEEEEE;
+
+}
+
+
+
+.style8 {
+
+	text-align: center;
+
+	color: #666666;
+
+	font-size: 8pt;
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.style9 {
+
+	color: #FFFFFF;	
+
+	text-align: center;
+
+	font-size: 10pt;
+
+	background-color: #CCCCCC;
+
+}
+
+
+
+.style10 {
+
+	width: 20%;
+
+	height: 20px;
+
+	cursor: hand;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+
+	background-color: #9BC4B5;
+
+}
+
+
+
+.style11 {
+
+	width: 20%;
+
+	height: 20px;
+
+	cursor: hand;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+
+	background-color: #47967C;
+
+}
+
+
+
+.style12 {
+
+	width: 20%;
+
+	height: 20px;
+
+	cursor: hand;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+
+	background-color: #237462;
+
+}
+
+
+
+.style13 {
+
+	height: 20px;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+
+	background-color: #014732;
+
+}
+
+
+
+.style14 {
+
+	width: 10%;
+
+	height: 20px;
+
+	text-align: center;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #F7E2C8;
+
+}
+
+
+
+.style15 {
+
+	width: 10%;
+
+	height: 20px;
+
+	text-align: center;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #D6F5DE;
+
+}
+
+
+
+.style16 {
+
+	height: 20px;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #9BC4B5;
+
+}
+
+
+
+.style17 {
+
+	height: 20px;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #47967C;
+
+}
+
+
+
+.style18 {
+
+	text-align: center;
+
+	color: #CCCCCC;
+
+	font-size: 8pt;
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.style19 {
+
+	height: 20px;
+
+	text-align: center;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #237462;
+
+}
+
+
+
+.style20 {
+
+	font-size: 10pt;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	background-color: #EEEEEE;
+
+	vertical-align: top;
+
+}
+
+
+
+.style21 {
+
+	cursor: hand;
+
+}
+
+
+
+.start {
+
+	//text-valign: middle;
+
+	color: #FF0000;
+
+	font-size: 10pt;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+/** add by MindyWang 2005/06/09 **/
+
+
+
+/**For displayTag **/
+
+
+
+table.simple thead tr {
+
+ background-color: #eee;
+
+  font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+  color: #333333;
+
+  border: 0px solid #999999;
+
+  line-height: 15pt;
+
+  letter-spacing : 1px;
+
+  font-weight: bold;
+
+  text-align: center;
+
+}
+
+table.simple tr.even {
+
+  background-color: #eec;
+
+  font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+  color: #333333;
+
+  border: 0px solid #999999;
+
+  line-height: 15pt;
+
+  letter-spacing : 1px;
+
+  text-align: center;
+
+}
+
+
+
+table.simple tr.odd {
+
+  background-color: #fff;
+
+  font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+  color: #333333;
+
+  border: 0px solid #999999;
+
+  line-height: 15pt;
+
+  letter-spacing : 1px;
+
+  text-align: center;
+
+}
+
+
+
+table.simple {
+
+  border: 1px solid #ccc;
+
+  border-collapse: collapse;
+
+  font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+  color: #333333;
+
+  border: 0px solid #999999;
+
+  line-height: 15pt;
+
+  letter-spacing : 1px;
+
+  text-align: center;
+
+}
+
+table.simple td,table.simple th{
+
+	border: 1px solid #ccc;
+
+	 font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";  
+
+}
+
+
+
+table.nocol tbody td,table.nocol tbody th{
+
+	border-left: none;
+
+	border-right: none;
+
+	
+
+}
+
+
+
+table.simple td.textRed {color: #b11;}
+
+/*end*/
+
+
+
+/**desc:1.For table**/ 
+
+.border {
+
+	border: 1px solid #999999;
+
+	BACKGROUND-COLOR: #ffffff;
+
+	font-family: "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	font-size: 12px;
+
+	color: #333333;
+
+}
+
+
+
+/**desc:1.for title (tr or th)**/
+
+.form1{
+
+	BACKGROUND-COLOR: #CCCCFF;
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	font-weight: bold;
+
+	color: #333333;	
+
+	border: 0px solid #999999;
+
+	line-height: 15pt;
+
+	letter-spacing : 1px;
+
+	white-space:	nowrap;
+
+}
+
+
+
+
+
+/**desc 1.for odd's td**/
+
+.form5{
+
+
+
+	BACKGROUND-COLOR: #DEE3E7;
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	color: #333333;
+
+	border: 0px solid #999999;
+
+	line-height: 15pt;
+
+	letter-spacing : 1px;
+
+	text-align: center;
+
+}
+
+
+
+/**desc 1.for even's td**/
+
+.form6{
+
+	BACKGROUND-COLOR: #F0F0F0;
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	color: #333333;	
+
+	border: 0px solid #999999;
+
+	line-height: 15pt;
+
+	letter-spacing : 1px;
+
+	text-align: center;
+
+}
+
+
+
+/**desc 1.for header content td**/
+
+.tform6{
+
+	BACKGROUND-COLOR: #F0F0F0;
+
+	font: 12px "新細明體","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	color: #333333;	
+
+	border: 0px solid #999999;
+
+	line-height: 15pt;
+
+	letter-spacing : 1px;
+
+	text-align: left;
+
+}
+
+
+
+/**desc 1.for header title td**/
+
+.tform5{
+
+	BACKGROUND-COLOR: #DEE3E7;
+
+	font: 12px "新細明體","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	color: #333333;
+
+	border: 0px solid #999999;
+
+	line-height: 15pt;
+
+	letter-spacing : 1px;
+
+	text-align: left;
+
+}
+
+
+
+.tform7{
+
+	BACKGROUND-COLOR: #cccccc;
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	font-weight: bold;
+
+	color: #333333;
+
+	border: 0px solid #999999;
+
+	line-height: 15pt;
+
+	letter-spacing : 1px;
+
+	text-align: center;
+
+	white-space:	nowrap;
+
+}
+
+
+
+.tform8{/** add by Tony for workitem bigger fontsize title **/
+
+	BACKGROUND-COLOR: #cccccc;
+
+	font: 18px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	font-weight: bold;
+
+	color: #333333;
+
+	border: 0px solid #999999;
+
+	line-height: 20pt;
+
+	letter-spacing : 1px;
+
+	text-align: center;
+
+	white-space:	nowrap;
+
+}
+
+
+
+
+
+/**For tag css (ex.ReOrder.jsp)**/
+
+
+
+TD.clsTab {
+
+	BACKGROUND-COLOR: #E6E6FA ; BORDER-BOTTOM: #E6E6FA 2px inset; BORDER-LEFT: #E6E6FA 1px solid; BORDER-RIGHT: #E6E6FA 1px solid; BORDER-TOP: #E6E6FA 2px solid; CURSOR: hand
+
+}
+
+TD.clsTab A {
+
+	COLOR: #000000; 
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	FONT-SIZE: 95%; 
+
+	TEXT-DECORATION: none
+
+}
+
+TD.clsTab A:hover {
+
+	COLOR: #000000; 
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	FONT-SIZE: 95%; 
+
+	TEXT-DECORATION: none
+
+}
+
+TD.clsTab A:active {
+
+	COLOR: #000000;
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif"; 
+
+	FONT-SIZE: 95%;	 
+
+	TEXT-DECORATION: none
+
+}
+
+
+
+TD.clsTabSelected {
+
+	BACKGROUND-COLOR: #CCCCFF  ; BORDER-LEFT: #CCCCFF 2px outset; BORDER-RIGHT: #CCCCFF 2px; BORDER-TOP:#CCCCFF 2px outset
+
+}
+
+TD.clsTabSelected A {
+
+	COLOR: #000000; 
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	FONT-SIZE: 120%; 
+
+	FONT-WEIGHT: bold; 
+
+	TEXT-DECORATION: none
+
+}
+
+TD.clsTabSelected A:hover {
+
+	COLOR: #000000; 
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+	FONT-SIZE: 120%; 
+
+	FONT-WEIGHT: bold; 
+
+	TEXT-DECORATION: none
+
+}
+
+TD.clsTabSelected A:active {
+
+	COLOR: #000000; 
+
+	font: 12px "�s�ө���","Verdana", "Arial", "Helvetica", "sans-serif";
+
+    FONT-SIZE: 120%; 
+
+    FONT-WEIGHT: bold; 
+
+    TEXT-DECORATION: none
+
+}
+
+TABLE#idTabs TD {
+
+	FONT-SIZE: 72%
+
+}
+
+TABLE#newsContent {
+
+	MARGIN-RIGHT: 50px
+
+}
+
+.tabBar{
+
+  BACKGROUND-COLOR: #DEE3E7  ;
+
+}
+
+
+
+/****/
+
+.BLOCK{
+
+	width:100%;
+
+	height:320;
+
+�@�@ overflow:auto;
+
+}
+
+
+
+.BLOCK1{
+
+	width:800;
+
+	height:250;
+
+	overflow:scroll;
+
+}
+
+
+
+/**FOR NSOR**/
+
+.BLOCK2{
+
+	width:760;
+
+	height:335;
+
+	overflow:scroll;
+
+}
+
+
+
+.BLOCK3{
+
+	width:100%;
+
+	height:450;
+
+�@�@overflow:auto;
+
+}
+
+/**FOR DFCR**/
+
+.BLOCK4{
+
+	width:760;
+
+	height:330;
+
+�@�@overflow:auto;
+
+}
+
+
+
+/**FOR SOCR's begin **/
+
+.BLOCK5{
+
+  width: 600px;
+
+  height:320px;
+
+  overflow:auto;		
+
+}
+
+/**For SOCR' BLAME  ReadonlyArbitrateConclusionRecord.jsp ArbitrateConclusionRecord.jsp**/
+.BLOCK6{
+
+	width:100%;
+
+	height:450;
+
+�@�@overflow:scroll;
+
+}
+
+/**modify page Socr**/
+
+body { 
+
+	font: 8pt/16pt Verdana; 
+
+	color: #7D775C;
+
+	background: #F5F7EC url("/askey/images/logo_back3.gif"); 
+
+	margin: 0px; 
+
+	text-align: center;
+
+	}
+
+
+
+h1 { 
+
+	font: bold 16pt Verdana; 
+
+	margin-top: 5px; 
+
+	margin-bottom: 5px; 
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	}
+
+#pageHeaderTop { 
+
+	background: url("/askey/images/headcss1.gif") no-repeat top left;
+
+	width: 647px; 
+
+	margin-top:10px;
+
+	}
+
+
+
+#pageHeader { 
+
+	background: url("/askey/images/headcss.gif") repeat-y left; 
+
+	width: 647px; 
+
+	height: 20px; 
+
+	margin-top:0px;
+
+	margin-bottom: 0px;
+
+	position:relative;
+
+	}
+
+#pageFooter { 
+
+	background: url("/askey/images/footcss1.gif") no-repeat bottom left;
+
+	width: 647px; 
+
+	}
+
+
+
+#container { 
+
+	background: transparent url("/askey/images/whitebg2.gif") repeat-y left; 
+
+	width:647px;
+
+	margin-top:0px;
+
+	position:relative;
+
+	}
+
+
+
+#supportingText {
+
+	background: transparent url("/askey/images/whitebg2.gif") repeat-y top left; 
+
+	float:left;
+
+	padding-left: 10px; 
+
+	padding-right: 30px; 
+
+	padding-top:30px;
+
+	padding-bottom:0px;
+
+	margin-bottom: 0px;
+
+	width:607px;
+
+	}
+
+
+
+#footer { 
+
+	background: transparent url("/askey/images/notext.gif") no-repeat top left; 	
+
+	left:0px;
+
+	text-align: center; 
+
+	padding-top:5px;
+
+	padding-bottom:10px;
+
+	float:right;
+
+	width:580px;
+
+	}	
+

@@ -1,0 +1,28 @@
+
+
+改 ADD 的名稱，讓排列整齊？
+
+Shopfloor 的 字體太大。
+
+
+--------------------------------------------
+
+Fedex VCI  
+QUERY的語句
+分 VCI
+
+主頁，新增條目，傳Table參數不同。
+Query頁。
+ViewState["Table"] = (if end with VCI delet VCI)
+ViewState["Original...."] = Where Customer = F 
+是否VCI要進 LINE 去查，
+
+-------
+從LINE 中，找出所有 VCI / 非 VCI 的 HS ，
+回到在 Head 的 DT 中，以這個條件刪減資料列。
+
+而且每次搜尋後也要經過 這個步驟。
+
+----------------------------
+
+

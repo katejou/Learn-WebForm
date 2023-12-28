@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blob_download", "Blob_download\Blob_download.csproj", "{136D1FBC-BDB6-4EB0-82A0-A8B4E017CFF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{136D1FBC-BDB6-4EB0-82A0-A8B4E017CFF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136D1FBC-BDB6-4EB0-82A0-A8B4E017CFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136D1FBC-BDB6-4EB0-82A0-A8B4E017CFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136D1FBC-BDB6-4EB0-82A0-A8B4E017CFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {580274BE-D2FF-4E11-B70A-1220768ACA39}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,663 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94409FDB-C953-4FDF-9ECA-AE783175A4A4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASP.NET_EX1_</RootNamespace>
+    <AssemblyName>TestOnChangeAssemblyName</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf" />
+    <Content Include="App_Data\LaLaLaDatabase.mdf" />
+    <Content Include="App_Data\LaLaLaDatabase_log.ldf" />
+    <Content Include="App_Data\myDATAbase.mdf" />
+    <Content Include="App_Data\myDATAbase_log.ldf" />
+    <Content Include="App_Themes\theme1\StyleSheet1.css" />
+    <Content Include="App_Themes\theme2\StyleSheet1.css" />
+    <Content Include="App_Themes\theme3\StyleSheet1.css" />
+    <Content Include="EX_10\MutiView_FileUpload.aspx" />
+    <Content Include="EX4\ValidateMethod.aspx" />
+    <Content Include="EX4\GroupValidator.aspx" />
+    <Content Include="EX4\CustomValidator.aspx" />
+    <Content Include="EX4\DefaultVaildator.aspx" />
+    <Content Include="EX1\ASP_NET%28EX1%29.aspx" />
+    <Content Include="EX2\POST_BACK.aspx" />
+    <Content Include="EX2\轉址\jumpPage.aspx" />
+    <Content Include="EX2\轉址\Target.aspx" />
+    <Content Include="EX2\傳值%28少%29\EX2_1Source.aspx" />
+    <Content Include="EX2\傳值%28少%29\EX2_1Target1.aspx" />
+    <Content Include="EX2\傳值%28少%29\EX2_1Target2.aspx" />
+    <Content Include="EX2\傳值%28少%29\EX2_1Target3.aspx" />
+    <Content Include="EX2\傳值%28少%29\EX2_1Target4.aspx" />
+    <Content Include="EX3\HiddenField.aspx" />
+    <Content Include="EX3\JavaScript1.js" />
+    <Content Include="EX3\ListBox.aspx" />
+    <Content Include="EX3\Calendar.aspx" />
+    <Content Include="EX3\OnClick_OnClientClick_FrontEndAlert.aspx" />
+    <Content Include="EX3\dynamicAdd_JS_Command.aspx" />
+    <Content Include="EX3\GroupMethodOfButtons.aspx" />
+    <Content Include="EX5\SelfDef_TraceWarn.aspx" />
+    <Content Include="EX5\TraceAt_Page_WebSiteLevel.aspx" />
+    <Content Include="EX5\Debug_Inspect_WriteLineIf.aspx" />
+    <Content Include="EX5\F9.aspx" />
+    <Content Include="EX6\SiteMap\Content1.aspx" />
+    <Content Include="EX6\SiteMap\Content2.aspx" />
+    <Content Include="EX6\SiteMap\Content3.aspx" />
+    <Content Include="EX6\SiteMap\Content4.aspx" />
+    <Content Include="EX6\SiteMap\Content5.aspx" />
+    <Content Include="EX6\SiteMap\Content6.aspx" />
+    <Content Include="EX6\ChangeDefaultMasterPage\ContentPage1.aspx" />
+    <Content Include="EX6\ChangeDefaultMasterPage\ContentPage2.aspx" />
+    <Content Include="EX6\ChangeDefaultMasterPage\ContentPage3.aspx" />
+    <Content Include="EX6\Change each other content2\ContentPage1.aspx" />
+    <Content Include="EX6\Change each other content2\ContentPage2.aspx" />
+    <Content Include="EX6\Master_ContentPage1\EX6_1ContentPage1.aspx" />
+    <Content Include="EX6\Master_ContentPage1\EX6_1ContentPage2.aspx" />
+    <Content Include="EX6\Change each other content\EX6_2ContentPage1.aspx" />
+    <Content Include="EX7\dynamicChageTheme\WebForm1.aspx" />
+    <Content Include="EX7\Page_CSS_theme\Page_CSS_theme.aspx" />
+    <Content Include="EX7\WebSiteCssTheme.aspx" />
+    <Content Include="EX8\ConnectToDataBase1\WebForm1.aspx" />
+    <Content Include="EX8\ViewsOfDataBase\WebForm1.aspx" />
+    <Content Include="EX8\ConnToDB2\WebForm1.aspx" />
+    <Content Include="EX8\SkyBulkCopy\WebForm1.aspx" />
+    <Content Include="EX9\UpdatePanel\UpdatePanel.aspx" />
+    <Content Include="EX9\UpdatePanel\Timer.aspx" />
+    <Content Include="EX9\loading.gif" />
+    <Content Include="EX9\LoadingCover.aspx" />
+    <Content Include="EX9\UpdatePanel\UpdateProgress.aspx" />
+    <Content Include="EX9\UpdatePanel\Timer%281%29.aspx" />
+    <Content Include="EX9\UpdatePanel\Timer%282%29.aspx" />
+    <Content Include="EX9\JavaScript_AJAX\EX9_6.aspx" />
+    <Content Include="EX9\JavaScript_AJAX\EX9_7.aspx" />
+    <Content Include="EX9\JavaScript_AJAX\HtmlPage1_EX9_6.html" />
+    <Content Include="EX_11\CodeJumpPage.aspx" />
+    <Content Include="EX_11\Err.html" />
+    <Content Include="EX_11\errorlog_webConfig.aspx" />
+    <Content Include="EX_11\Err_aspx.aspx" />
+    <Content Include="EX_11\four_0_four.html" />
+    <Content Include="EX_11\Page_attri.aspx" />
+    <Content Include="EX_11\QureyLinkTooLong.aspx" />
+    <Content Include="EX_11\UnknowError.html" />
+    <Content Include="EX_12\EX12_1_iis.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="EX_11\Page_Application_err.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EX9\JavaScript_AJAX\TestOfSingletonLock.cs" />
+    <Compile Include="EX_10\MutiView_FileUpload.aspx.cs">
+      <DependentUpon>MutiView_FileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX_10\MutiView_FileUpload.aspx.designer.cs">
+      <DependentUpon>MutiView_FileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX4\ValidateMethod.aspx.cs">
+      <DependentUpon>ValidateMethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX4\ValidateMethod.aspx.designer.cs">
+      <DependentUpon>ValidateMethod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX4\GroupValidator.aspx.cs">
+      <DependentUpon>GroupValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX4\GroupValidator.aspx.designer.cs">
+      <DependentUpon>GroupValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX4\CustomValidator.aspx.cs">
+      <DependentUpon>CustomValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX4\CustomValidator.aspx.designer.cs">
+      <DependentUpon>CustomValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX4\DefaultVaildator.aspx.cs">
+      <DependentUpon>DefaultVaildator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX4\DefaultVaildator.aspx.designer.cs">
+      <DependentUpon>DefaultVaildator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX1\ASP_NET%28EX1%29.aspx.cs">
+      <DependentUpon>ASP_NET%28EX1%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\POST_BACK.aspx.cs">
+      <DependentUpon>POST_BACK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\POST_BACK.aspx.designer.cs">
+      <DependentUpon>POST_BACK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX2\轉址\jumpPage.aspx.cs">
+      <DependentUpon>jumpPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\轉址\jumpPage.aspx.designer.cs">
+      <DependentUpon>jumpPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Source.aspx.cs">
+      <DependentUpon>EX2_1Source.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Source.aspx.designer.cs">
+      <DependentUpon>EX2_1Source.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Target1.aspx.cs">
+      <DependentUpon>EX2_1Target1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Target1.aspx.designer.cs">
+      <DependentUpon>EX2_1Target1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Target2.aspx.cs">
+      <DependentUpon>EX2_1Target2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Target2.aspx.designer.cs">
+      <DependentUpon>EX2_1Target2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Target3.aspx.cs">
+      <DependentUpon>EX2_1Target3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Target3.aspx.designer.cs">
+      <DependentUpon>EX2_1Target3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Target4.aspx.cs">
+      <DependentUpon>EX2_1Target4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\傳值%28少%29\EX2_1Target4.aspx.designer.cs">
+      <DependentUpon>EX2_1Target4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX3\HiddenField.aspx.cs">
+      <DependentUpon>HiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX3\HiddenField.aspx.designer.cs">
+      <DependentUpon>HiddenField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX3\ListBox.aspx.cs">
+      <DependentUpon>ListBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX3\ListBox.aspx.designer.cs">
+      <DependentUpon>ListBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX3\Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX3\Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX3\OnClick_OnClientClick_FrontEndAlert.aspx.cs">
+      <DependentUpon>OnClick_OnClientClick_FrontEndAlert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX3\OnClick_OnClientClick_FrontEndAlert.aspx.designer.cs">
+      <DependentUpon>OnClick_OnClientClick_FrontEndAlert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX3\dynamicAdd_JS_Command.aspx.cs">
+      <DependentUpon>dynamicAdd_JS_Command.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX3\dynamicAdd_JS_Command.aspx.designer.cs">
+      <DependentUpon>dynamicAdd_JS_Command.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX3\GroupMethodOfButtons.aspx.cs">
+      <DependentUpon>GroupMethodOfButtons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX3\GroupMethodOfButtons.aspx.designer.cs">
+      <DependentUpon>GroupMethodOfButtons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX5\SelfDef_TraceWarn.aspx.cs">
+      <DependentUpon>SelfDef_TraceWarn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX5\SelfDef_TraceWarn.aspx.designer.cs">
+      <DependentUpon>SelfDef_TraceWarn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX5\TraceAt_Page_WebSiteLevel.aspx.cs">
+      <DependentUpon>TraceAt_Page_WebSiteLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX5\TraceAt_Page_WebSiteLevel.aspx.designer.cs">
+      <DependentUpon>TraceAt_Page_WebSiteLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX5\Debug_Inspect_WriteLineIf.aspx.cs">
+      <DependentUpon>Debug_Inspect_WriteLineIf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX5\Debug_Inspect_WriteLineIf.aspx.designer.cs">
+      <DependentUpon>Debug_Inspect_WriteLineIf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX5\F9.aspx.cs">
+      <DependentUpon>F9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX5\F9.aspx.designer.cs">
+      <DependentUpon>F9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content1.aspx.cs">
+      <DependentUpon>Content1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content1.aspx.designer.cs">
+      <DependentUpon>Content1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content2.aspx.cs">
+      <DependentUpon>Content2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content2.aspx.designer.cs">
+      <DependentUpon>Content2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content3.aspx.cs">
+      <DependentUpon>Content3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content3.aspx.designer.cs">
+      <DependentUpon>Content3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content4.aspx.cs">
+      <DependentUpon>Content4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content4.aspx.designer.cs">
+      <DependentUpon>Content4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content5.aspx.cs">
+      <DependentUpon>Content5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content5.aspx.designer.cs">
+      <DependentUpon>Content5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content6.aspx.cs">
+      <DependentUpon>Content6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Content6.aspx.designer.cs">
+      <DependentUpon>Content6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\SiteMap\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\ContentPage1.aspx.cs">
+      <DependentUpon>ContentPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\ContentPage1.aspx.designer.cs">
+      <DependentUpon>ContentPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\ContentPage2.aspx.cs">
+      <DependentUpon>ContentPage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\ContentPage2.aspx.designer.cs">
+      <DependentUpon>ContentPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\ContentPage3.aspx.cs">
+      <DependentUpon>ContentPage3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\ContentPage3.aspx.designer.cs">
+      <DependentUpon>ContentPage3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\Master1.Master.cs">
+      <DependentUpon>Master1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\Master1.Master.designer.cs">
+      <DependentUpon>Master1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\Master2.Master.cs">
+      <DependentUpon>Master2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\ChangeDefaultMasterPage\Master2.Master.designer.cs">
+      <DependentUpon>Master2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\Change each other content2\ContentPage1.aspx.cs">
+      <DependentUpon>ContentPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\Change each other content2\ContentPage1.aspx.designer.cs">
+      <DependentUpon>ContentPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\Change each other content2\ContentPage2.aspx.cs">
+      <DependentUpon>ContentPage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\Change each other content2\ContentPage2.aspx.designer.cs">
+      <DependentUpon>ContentPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\Change each other content2\EX6_3.Master.cs">
+      <DependentUpon>EX6_3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\Change each other content2\EX6_3.Master.designer.cs">
+      <DependentUpon>EX6_3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\Master_ContentPage1\EX6_1.Master.cs">
+      <DependentUpon>EX6_1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\Master_ContentPage1\EX6_1.Master.designer.cs">
+      <DependentUpon>EX6_1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\Master_ContentPage1\EX6_1ContentPage1.aspx.cs">
+      <DependentUpon>EX6_1ContentPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\Master_ContentPage1\EX6_1ContentPage1.aspx.designer.cs">
+      <DependentUpon>EX6_1ContentPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\Master_ContentPage1\EX6_1ContentPage2.aspx.cs">
+      <DependentUpon>EX6_1ContentPage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\Master_ContentPage1\EX6_1ContentPage2.aspx.designer.cs">
+      <DependentUpon>EX6_1ContentPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\Change each other content\EX6_2.Master.cs">
+      <DependentUpon>EX6_2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\Change each other content\EX6_2.Master.designer.cs">
+      <DependentUpon>EX6_2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EX6\Change each other content\EX6_2ContentPage1.aspx.cs">
+      <DependentUpon>EX6_2ContentPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX6\Change each other content\EX6_2ContentPage1.aspx.designer.cs">
+      <DependentUpon>EX6_2ContentPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX7\dynamicChageTheme\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX7\dynamicChageTheme\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX7\Page_CSS_theme\Page_CSS_theme.aspx.cs">
+      <DependentUpon>Page_CSS_theme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX7\Page_CSS_theme\Page_CSS_theme.aspx.designer.cs">
+      <DependentUpon>Page_CSS_theme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX7\WebSiteCssTheme.aspx.cs">
+      <DependentUpon>WebSiteCssTheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX7\WebSiteCssTheme.aspx.designer.cs">
+      <DependentUpon>WebSiteCssTheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX8\ConnectToDataBase1\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX8\ConnectToDataBase1\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX8\ViewsOfDataBase\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX8\ViewsOfDataBase\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX8\ConnToDB2\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX8\ConnToDB2\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX8\SkyBulkCopy\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX8\SkyBulkCopy\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\UpdatePanel.aspx.cs">
+      <DependentUpon>UpdatePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\UpdatePanel.aspx.designer.cs">
+      <DependentUpon>UpdatePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\Timer.aspx.cs">
+      <DependentUpon>Timer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\Timer.aspx.designer.cs">
+      <DependentUpon>Timer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX9\LoadingCover.aspx.cs">
+      <DependentUpon>LoadingCover.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX9\LoadingCover.aspx.designer.cs">
+      <DependentUpon>LoadingCover.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\UpdateProgress.aspx.cs">
+      <DependentUpon>UpdateProgress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\UpdateProgress.aspx.designer.cs">
+      <DependentUpon>UpdateProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\Timer%281%29.aspx.cs">
+      <DependentUpon>Timer%281%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\Timer%281%29.aspx.designer.cs">
+      <DependentUpon>Timer%281%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\Timer%282%29.aspx.cs">
+      <DependentUpon>Timer%282%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX9\UpdatePanel\Timer%282%29.aspx.designer.cs">
+      <DependentUpon>Timer%282%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX9\JavaScript_AJAX\EX9_6.aspx.cs">
+      <DependentUpon>EX9_6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX9\JavaScript_AJAX\EX9_6.aspx.designer.cs">
+      <DependentUpon>EX9_6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX9\JavaScript_AJAX\EX9_7.aspx.cs">
+      <DependentUpon>EX9_7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX9\JavaScript_AJAX\EX9_7.aspx.designer.cs">
+      <DependentUpon>EX9_7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX_11\CodeJumpPage.aspx.cs">
+      <DependentUpon>CodeJumpPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX_11\CodeJumpPage.aspx.designer.cs">
+      <DependentUpon>CodeJumpPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX_11\errorlog_webConfig.aspx.cs">
+      <DependentUpon>errorlog_webConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX_11\errorlog_webConfig.aspx.designer.cs">
+      <DependentUpon>errorlog_webConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX_11\Err_aspx.aspx.cs">
+      <DependentUpon>Err_aspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX_11\Err_aspx.aspx.designer.cs">
+      <DependentUpon>Err_aspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX_11\Page_attri.aspx.cs">
+      <DependentUpon>Page_attri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX_11\Page_attri.aspx.designer.cs">
+      <DependentUpon>Page_attri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX_11\QureyLinkTooLong.aspx.cs">
+      <DependentUpon>QureyLinkTooLong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX_11\QureyLinkTooLong.aspx.designer.cs">
+      <DependentUpon>QureyLinkTooLong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EX_12\EX12_1_iis.aspx.cs">
+      <DependentUpon>EX12_1_iis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX_12\EX12_1_iis.aspx.designer.cs">
+      <DependentUpon>EX12_1_iis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="EX_11\Page_Application_err.aspx.cs">
+      <DependentUpon>Page_Application_err.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX_11\Page_Application_err.aspx.designer.cs">
+      <DependentUpon>Page_Application_err.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EX2\轉址\Target.aspx.cs">
+      <DependentUpon>Target.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EX2\轉址\Target.aspx.designer.cs">
+      <DependentUpon>Target.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EX6\Master_ContentPage1\EX6_1.Master" />
+    <Content Include="EX6\Change each other content\EX6_2.Master" />
+    <Content Include="EX6\Change each other content2\EX6_3.Master" />
+    <Content Include="EX6\ChangeDefaultMasterPage\Master1.Master" />
+    <Content Include="EX6\ChangeDefaultMasterPage\Master2.Master" />
+    <Content Include="EX6\SiteMap\Site1.Master" />
+    <Content Include="EX6\SiteMap\Web.sitemap" />
+    <Content Include="EX6\SiteMap\Web1.sitemap" />
+    <Content Include="App_Themes\theme1\Skin1.skin" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EX_10\file\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64797</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64797/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

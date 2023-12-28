@@ -1,0 +1,62 @@
+.NetFrameWork 4.0為了防止XSS (Cross Site Script)攻擊，
+
+頁面在postback之後，如果表單欄位內有包含了 html tag / javascript 的話，ASP.NET就會出現下列這種錯誤訊息
+
+目前有兩種方法可以進行處理
+
+ 
+
+因引發這樣的錯誤並不是很有危險的物件所產生，所以就依以下方法把它給關掉囉！！
+
+不過我只有做 A 部份的 Step 1. Step 2. 。
+
+ 
+
+A.將頁面的驗證給關掉
+
+關閉的方法如下：
+
+step 1.
+
+在web.config中，增加
+
+<configuration>
+    <system.web>
+    <httpRuntime requestValidationMode="2.0"/>
+
+</configuration>
+
+step2.
+
+在該頁面的 aspx 加入
+
+<%@ Page Language="C#" AutoEventWireup="true"  validateRequest="false" %>
+
+這樣就能把這種防攻擊的偵側給關掉。
+
+ 
+
+step3.
+
+既然把這種防護機制給關掉了，那麼在使用者輸入的資料，就一定要記得編碼過再存到db去
+
+eg.
+
+HttpUtility.HtmlEncode(textbox1.text)
+
+HttpUtility.HtmlDecode(textbox1.text)
+
+ 
+
+B.透過 global.asax中的 application_error 來 catch System.Web.HttpRequestValidationException
+
+step1. 在 global.asax 中找到 application_error 的事件，並加入
+
+       if (Server.GetLastError().GetType().ToString() == "System.Web.HttpRequestValidationException")
+       {
+            Response.Write("HttpRequestValidationException");
+       }
+      
+        Server.ClearError(); 
+
+之後發生 error 時，就會做指定的事，操作者也不會看到 .net 的錯誤畫面。

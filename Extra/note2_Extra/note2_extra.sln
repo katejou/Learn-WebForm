@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1500
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "note2_extra", "note2_extra\note2_extra.csproj", "{BC99A1C3-9DF4-4B32-8FCD-E31DE5AF6208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUserControl_dyn_add_give_value", "WebUserControl_dyn_add_give_value\test\WebUserControl_dyn_add_give_value.csproj", "{F881251C-BAA8-4AB5-A365-EDF25A5462A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC99A1C3-9DF4-4B32-8FCD-E31DE5AF6208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC99A1C3-9DF4-4B32-8FCD-E31DE5AF6208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC99A1C3-9DF4-4B32-8FCD-E31DE5AF6208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC99A1C3-9DF4-4B32-8FCD-E31DE5AF6208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F881251C-BAA8-4AB5-A365-EDF25A5462A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F881251C-BAA8-4AB5-A365-EDF25A5462A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F881251C-BAA8-4AB5-A365-EDF25A5462A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F881251C-BAA8-4AB5-A365-EDF25A5462A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34C24769-F88D-47DC-9241-35E0B50AE685}
+	EndGlobalSection
+EndGlobal

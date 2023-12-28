@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <!--頂層-->
+  <siteMapNode url="~/EX6/SiteMap/Content1.aspx" title="Content1"  description="Content1">
+    <!--最後面沒有斛線的，表示它可以展開。-->
+    <!--展開後︰-->
+            <siteMapNode url="~/EX6/SiteMap/Content2.aspx" title="Content2"  description="Content2">
+            <!--再展開後︰-->
+                      <siteMapNode url="~/EX6/SiteMap/Content3.aspx" title="Content3"  description="Content3">
+                           <!--再再展開後︰-->
+                                  <siteMapNode url="~/EX6/SiteMap/Content4.aspx" title="Content4"  description="Content4" />
+                                  </siteMapNode>
+                                  <!--這裡關上的是再再展開-->
+                      <siteMapNode url="~/EX6/SiteMap/Content5.aspx" title="Content5"  description="Content5">
+                           <!--再再展開後︰-->
+                                  <siteMapNode url="~/EX6/SiteMap/Content6.aspx" title="Content6"  description="Content6" />
+                                  </siteMapNode>
+                                  <!--這裡關上的是再再展開-->
+            </siteMapNode>
+            <!--這裡關上的是再展開-->
+    </siteMapNode>
+    <!--這裡關上的是第一個展開-->
+</siteMap>

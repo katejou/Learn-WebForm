@@ -1,0 +1,4 @@
+註冊成功的郵件檔
+
+username: <% UserName %>
+password: <% Password %>

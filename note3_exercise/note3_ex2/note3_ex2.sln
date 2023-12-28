@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "note3_ex2", "note3_ex2\note3_ex2.csproj", "{992DAA14-23BC-4A53-8A21-00E23A87246A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor_ex", "Monitor_ex\Monitor_ex.csproj", "{8A65779D-C58A-46C0-A1A1-9869F52F5859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM_Model", "APM_Model\APM_Model.csproj", "{D58308C7-0E5D-4998-99BA-0FF30087BF3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{992DAA14-23BC-4A53-8A21-00E23A87246A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992DAA14-23BC-4A53-8A21-00E23A87246A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992DAA14-23BC-4A53-8A21-00E23A87246A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992DAA14-23BC-4A53-8A21-00E23A87246A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A65779D-C58A-46C0-A1A1-9869F52F5859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A65779D-C58A-46C0-A1A1-9869F52F5859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A65779D-C58A-46C0-A1A1-9869F52F5859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A65779D-C58A-46C0-A1A1-9869F52F5859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58308C7-0E5D-4998-99BA-0FF30087BF3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58308C7-0E5D-4998-99BA-0FF30087BF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58308C7-0E5D-4998-99BA-0FF30087BF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58308C7-0E5D-4998-99BA-0FF30087BF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {240050CD-B7DF-4738-A0C8-1B80A4B7FD0E}
+	EndGlobalSection
+EndGlobal
