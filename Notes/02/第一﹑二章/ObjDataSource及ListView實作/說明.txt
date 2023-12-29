@@ -1,0 +1,6 @@
+2020/12/09
+
+跑過是可行的，但是 Esser 不想加入 App_Code 的資料夾。
+改用了 SqlDataSource 
+也是可以抓到 QueryString 和 Web.config 中的 ConnectionString 的。
+所以現在只是留下實作過的紀錄，以後要用可以看。
